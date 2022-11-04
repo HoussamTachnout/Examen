@@ -1,12 +1,10 @@
 ﻿using System;
 
-public class Class1
+public class Etudiant()
 {
-	public Etudiant()
-	{
 		public int Numéro;
 	    public string nom;
 		public string prenom;
 
-	}
 }
+

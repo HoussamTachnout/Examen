@@ -1,10 +1,8 @@
 ﻿using System;
 
-public class Class1
+public class QCM()
 {
-	public QCM()
-	{
 		public bool Vrai;
 	    public bool False;
-	}
 }
+

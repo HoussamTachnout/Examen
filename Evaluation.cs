@@ -1,9 +1,7 @@
 ﻿using System;
 
-public class Class1
+public class Evaluation()
 {
-	public Evaluation()
-	{
 		public int date_debut;
 		public int date_fin;
 		public string matiere;
@@ -12,6 +10,17 @@ public class Class1
 	{
 		return Note()
 	}
+	public class QCM(): class Evaluation()
+	{
 
 	}
+    public class Exercice():class Evaluation()
+    {
+
+    }
+    public class Reponse()
+	{
+
+	}
+
 }

@@ -1,9 +1,7 @@
 ﻿using System;
 
-public class Class1
+public class Exercice()
 {
-	public Exercice()
-	{
 		public string texte;
-	}
 }
+
