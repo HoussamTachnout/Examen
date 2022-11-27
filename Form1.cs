@@ -41,17 +41,17 @@ namespace Exam
 
         private void ajouter1_Click(object sender, EventArgs e)
         {
-            textBox3.Visible = true;
+            textbox1.Visible = true;
         }
 
         private void ajouter2_Click(object sender, EventArgs e)
         {
-            textBox2.Visible = true;
+            textbox2.Visible = true;
         }
 
         private void ajouter3_Click(object sender, EventArgs e)
         {
-            textBox1.Visible = true;
+            textbox3.Visible = true;
         }
 
         private void ajouter1qcm_Click(object sender, EventArgs e)
@@ -84,28 +84,11 @@ namespace Exam
             qcm.Visible = true;
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void textbox2_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                string connString = "Server=localhost;Database=table;Uid=root;Pwd=;";
-                MySqlConnection mcon = new MySqlConnection(connString);
-                mcon.Open();
-
-                string cmdText = "INSERT INTO question direct(textBox3) VALUES (@textBox3)";
-                MySqlCommand cmd = new MySqlCommand(cmdText, mcon);
-                cmd.Parameters.Add("@textBox3", textBox3.Text);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Question Inserted");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -113,9 +96,9 @@ namespace Exam
                 MySqlConnection mcon = new MySqlConnection(connString);
                 mcon.Open();
 
-                string cmdText = "INSERT INTO question direct(textBox2) VALUES (@textBox2)";
+                string cmdText = "INSERT INTO question_directe(textbox1) VALUES (@textbox1)";
                 MySqlCommand cmd = new MySqlCommand(cmdText, mcon);
-                cmd.Parameters.Add("@textBox2", textBox2.Text);
+                cmd.Parameters.Add("@textbox1", textbox1.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Question Inserted");
             }
@@ -125,7 +108,7 @@ namespace Exam
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -133,9 +116,9 @@ namespace Exam
                 MySqlConnection mcon = new MySqlConnection(connString);
                 mcon.Open();
 
-                string cmdText = "INSERT INTO question direct(textBox1) VALUES (@textBox1)";
+                string cmdText = "INSERT INTO question_directe(textbox2) VALUES (@textbox2)";
                 MySqlCommand cmd = new MySqlCommand(cmdText, mcon);
-                cmd.Parameters.Add("@textBox1", textBox1.Text);
+                cmd.Parameters.Add("@textbox2", textbox2.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Question Inserted");
             }
@@ -143,6 +126,36 @@ namespace Exam
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string connString = "Server=localhost;Database=table;Uid=root;Pwd=;";
+                MySqlConnection mcon = new MySqlConnection(connString);
+                mcon.Open();
+
+                string cmdText = "INSERT INTO question_directe(textbox3) VALUES (@textbox3)";
+                MySqlCommand cmd = new MySqlCommand(cmdText, mcon);
+                cmd.Parameters.Add("@textbox3", textbox3.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Question Inserted");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textbox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

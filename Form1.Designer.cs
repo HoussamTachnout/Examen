@@ -30,9 +30,9 @@
         {
             this.qcm = new System.Windows.Forms.CheckBox();
             this.questiondirect = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textbox3 = new System.Windows.Forms.TextBox();
+            this.textbox2 = new System.Windows.Forms.TextBox();
+            this.textbox1 = new System.Windows.Forms.TextBox();
             this.ajouter3 = new System.Windows.Forms.Button();
             this.ajouter2 = new System.Windows.Forms.Button();
             this.ajouter1 = new System.Windows.Forms.Button();
@@ -54,6 +54,9 @@
             this.ajouter2qcm = new System.Windows.Forms.Button();
             this.ajouter3qcm = new System.Windows.Forms.Button();
             this.creerexamen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // qcm
@@ -80,35 +83,35 @@
             this.questiondirect.Visible = false;
             this.questiondirect.CheckedChanged += new System.EventHandler(this.questiondirect_CheckedChanged);
             // 
-            // textBox1
+            // textbox3
             // 
-            this.textBox1.Location = new System.Drawing.Point(305, 222);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 42);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Visible = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textbox3.Location = new System.Drawing.Point(305, 222);
+            this.textbox3.Multiline = true;
+            this.textbox3.Name = "textbox3";
+            this.textbox3.Size = new System.Drawing.Size(262, 42);
+            this.textbox3.TabIndex = 4;
+            this.textbox3.Visible = false;
+            this.textbox3.TextChanged += new System.EventHandler(this.textbox3_TextChanged);
             // 
-            // textBox2
+            // textbox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(305, 153);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 42);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Visible = false;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textbox2.Location = new System.Drawing.Point(305, 153);
+            this.textbox2.Multiline = true;
+            this.textbox2.Name = "textbox2";
+            this.textbox2.Size = new System.Drawing.Size(262, 42);
+            this.textbox2.TabIndex = 5;
+            this.textbox2.Visible = false;
+            this.textbox2.TextChanged += new System.EventHandler(this.textbox2_TextChanged);
             // 
-            // textBox3
+            // textbox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(305, 90);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 42);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Visible = false;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textbox1.Location = new System.Drawing.Point(305, 90);
+            this.textbox1.Multiline = true;
+            this.textbox1.Name = "textbox1";
+            this.textbox1.Size = new System.Drawing.Size(262, 42);
+            this.textbox1.TabIndex = 6;
+            this.textbox1.Visible = false;
+            this.textbox1.TextChanged += new System.EventHandler(this.textbox1_TextChanged);
             // 
             // ajouter3
             // 
@@ -330,11 +333,44 @@
             this.creerexamen.UseVisualStyleBackColor = true;
             this.creerexamen.Click += new System.EventHandler(this.creerexamen_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(630, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(66, 37);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Ajouter";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(630, 156);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 39);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Ajouter";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(630, 225);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(66, 39);
+            this.button3.TabIndex = 31;
+            this.button3.Text = "Ajouter";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.creerexamen);
             this.Controls.Add(this.ajouter3qcm);
             this.Controls.Add(this.ajouter2qcm);
@@ -356,9 +392,9 @@
             this.Controls.Add(this.ajouter1);
             this.Controls.Add(this.ajouter2);
             this.Controls.Add(this.ajouter3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textbox1);
+            this.Controls.Add(this.textbox2);
+            this.Controls.Add(this.textbox3);
             this.Controls.Add(this.questiondirect);
             this.Controls.Add(this.qcm);
             this.Name = "Form1";
@@ -371,9 +407,9 @@
         #endregion
         private System.Windows.Forms.CheckBox qcm;
         private System.Windows.Forms.CheckBox questiondirect;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textbox3;
+        private System.Windows.Forms.TextBox textbox2;
+        private System.Windows.Forms.TextBox textbox1;
         private System.Windows.Forms.Button ajouter3;
         private System.Windows.Forms.Button ajouter2;
         private System.Windows.Forms.Button ajouter1;
@@ -395,6 +431,9 @@
         private System.Windows.Forms.Button ajouter2qcm;
         private System.Windows.Forms.Button ajouter3qcm;
         private System.Windows.Forms.Button creerexamen;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
