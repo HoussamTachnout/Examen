@@ -28,60 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.qcm = new System.Windows.Forms.CheckBox();
-            this.questiondirect = new System.Windows.Forms.CheckBox();
             this.textbox3 = new System.Windows.Forms.TextBox();
             this.textbox2 = new System.Windows.Forms.TextBox();
             this.textbox1 = new System.Windows.Forms.TextBox();
             this.ajouter3 = new System.Windows.Forms.Button();
             this.ajouter2 = new System.Windows.Forms.Button();
             this.ajouter1 = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.envoyer = new System.Windows.Forms.Button();
-            this.annuler = new System.Windows.Forms.Button();
+            this.textbox4 = new System.Windows.Forms.TextBox();
+            this.textbox5 = new System.Windows.Forms.TextBox();
+            this.textbox6 = new System.Windows.Forms.TextBox();
             this.ajouter1qcm = new System.Windows.Forms.Button();
             this.ajouter2qcm = new System.Windows.Forms.Button();
             this.ajouter3qcm = new System.Windows.Forms.Button();
             this.creerexamen = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.qc = new System.Windows.Forms.RadioButton();
+            this.qsdirecte = new System.Windows.Forms.RadioButton();
+            this.button4 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
-            // 
-            // qcm
-            // 
-            this.qcm.AutoSize = true;
-            this.qcm.Location = new System.Drawing.Point(250, 54);
-            this.qcm.Name = "qcm";
-            this.qcm.Size = new System.Drawing.Size(50, 17);
-            this.qcm.TabIndex = 2;
-            this.qcm.Text = "QCM";
-            this.qcm.UseVisualStyleBackColor = true;
-            this.qcm.Visible = false;
-            this.qcm.CheckedChanged += new System.EventHandler(this.qcm_CheckedChanged);
-            // 
-            // questiondirect
-            // 
-            this.questiondirect.AutoSize = true;
-            this.questiondirect.Location = new System.Drawing.Point(414, 54);
-            this.questiondirect.Name = "questiondirect";
-            this.questiondirect.Size = new System.Drawing.Size(99, 17);
-            this.questiondirect.TabIndex = 3;
-            this.questiondirect.Text = "Question Direct";
-            this.questiondirect.UseVisualStyleBackColor = true;
-            this.questiondirect.Visible = false;
-            this.questiondirect.CheckedChanged += new System.EventHandler(this.questiondirect_CheckedChanged);
             // 
             // textbox3
             // 
@@ -91,7 +64,6 @@
             this.textbox3.Size = new System.Drawing.Size(262, 42);
             this.textbox3.TabIndex = 4;
             this.textbox3.Visible = false;
-            this.textbox3.TextChanged += new System.EventHandler(this.textbox3_TextChanged);
             // 
             // textbox2
             // 
@@ -101,7 +73,6 @@
             this.textbox2.Size = new System.Drawing.Size(262, 42);
             this.textbox2.TabIndex = 5;
             this.textbox2.Visible = false;
-            this.textbox2.TextChanged += new System.EventHandler(this.textbox2_TextChanged);
             // 
             // textbox1
             // 
@@ -111,7 +82,6 @@
             this.textbox1.Size = new System.Drawing.Size(262, 42);
             this.textbox1.TabIndex = 6;
             this.textbox1.Visible = false;
-            this.textbox1.TextChanged += new System.EventHandler(this.textbox1_TextChanged);
             // 
             // ajouter3
             // 
@@ -146,153 +116,36 @@
             this.ajouter1.Visible = false;
             this.ajouter1.Click += new System.EventHandler(this.ajouter1_Click);
             // 
-            // checkBox3
+            // textbox4
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(567, 286);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 10;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.Visible = false;
+            this.textbox4.Location = new System.Drawing.Point(180, 279);
+            this.textbox4.Multiline = true;
+            this.textbox4.Name = "textbox4";
+            this.textbox4.Size = new System.Drawing.Size(199, 33);
+            this.textbox4.TabIndex = 20;
+            this.textbox4.Visible = false;
             // 
-            // checkBox2
+            // textbox5
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(468, 286);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.Visible = false;
+            this.textbox5.Location = new System.Drawing.Point(180, 331);
+            this.textbox5.Multiline = true;
+            this.textbox5.Name = "textbox5";
+            this.textbox5.Size = new System.Drawing.Size(199, 33);
+            this.textbox5.TabIndex = 21;
+            this.textbox5.Visible = false;
             // 
-            // checkBox4
+            // textbox6
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(657, 286);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 17);
-            this.checkBox4.TabIndex = 12;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.Visible = false;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(468, 330);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(80, 17);
-            this.checkBox6.TabIndex = 14;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.Visible = false;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(567, 331);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
-            this.checkBox7.TabIndex = 15;
-            this.checkBox7.Text = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.Visible = false;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(657, 332);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(80, 17);
-            this.checkBox8.TabIndex = 16;
-            this.checkBox8.Text = "checkBox8";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.Visible = false;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(468, 374);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(80, 17);
-            this.checkBox9.TabIndex = 17;
-            this.checkBox9.Text = "checkBox9";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.Visible = false;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(567, 374);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(86, 17);
-            this.checkBox10.TabIndex = 18;
-            this.checkBox10.Text = "checkBox10";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.Visible = false;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(659, 374);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(86, 17);
-            this.checkBox11.TabIndex = 19;
-            this.checkBox11.Text = "checkBox11";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.Visible = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(250, 275);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 33);
-            this.textBox4.TabIndex = 20;
-            this.textBox4.Visible = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(250, 318);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 33);
-            this.textBox5.TabIndex = 21;
-            this.textBox5.Visible = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(250, 365);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(199, 33);
-            this.textBox6.TabIndex = 22;
-            this.textBox6.Visible = false;
-            // 
-            // envoyer
-            // 
-            this.envoyer.Location = new System.Drawing.Point(556, 397);
-            this.envoyer.Name = "envoyer";
-            this.envoyer.Size = new System.Drawing.Size(81, 52);
-            this.envoyer.TabIndex = 23;
-            this.envoyer.Text = "Envoyer";
-            this.envoyer.UseVisualStyleBackColor = true;
-            // 
-            // annuler
-            // 
-            this.annuler.Location = new System.Drawing.Point(660, 397);
-            this.annuler.Name = "annuler";
-            this.annuler.Size = new System.Drawing.Size(77, 52);
-            this.annuler.TabIndex = 24;
-            this.annuler.Text = "Annuler";
-            this.annuler.UseVisualStyleBackColor = true;
+            this.textbox6.Location = new System.Drawing.Point(180, 387);
+            this.textbox6.Multiline = true;
+            this.textbox6.Name = "textbox6";
+            this.textbox6.Size = new System.Drawing.Size(199, 33);
+            this.textbox6.TabIndex = 22;
+            this.textbox6.Visible = false;
             // 
             // ajouter1qcm
             // 
-            this.ajouter1qcm.Location = new System.Drawing.Point(54, 267);
+            this.ajouter1qcm.Location = new System.Drawing.Point(6, 274);
             this.ajouter1qcm.Name = "ajouter1qcm";
             this.ajouter1qcm.Size = new System.Drawing.Size(91, 39);
             this.ajouter1qcm.TabIndex = 25;
@@ -303,9 +156,9 @@
             // 
             // ajouter2qcm
             // 
-            this.ajouter2qcm.Location = new System.Drawing.Point(54, 312);
+            this.ajouter2qcm.Location = new System.Drawing.Point(7, 330);
             this.ajouter2qcm.Name = "ajouter2qcm";
-            this.ajouter2qcm.Size = new System.Drawing.Size(91, 42);
+            this.ajouter2qcm.Size = new System.Drawing.Size(91, 38);
             this.ajouter2qcm.TabIndex = 26;
             this.ajouter2qcm.Text = "Ajouter 2éme QCM";
             this.ajouter2qcm.UseVisualStyleBackColor = true;
@@ -314,7 +167,7 @@
             // 
             // ajouter3qcm
             // 
-            this.ajouter3qcm.Location = new System.Drawing.Point(54, 360);
+            this.ajouter3qcm.Location = new System.Drawing.Point(8, 384);
             this.ajouter3qcm.Name = "ajouter3qcm";
             this.ajouter3qcm.Size = new System.Drawing.Size(91, 43);
             this.ajouter3qcm.TabIndex = 27;
@@ -325,78 +178,220 @@
             // 
             // creerexamen
             // 
+            this.creerexamen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.creerexamen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creerexamen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.creerexamen.Location = new System.Drawing.Point(7, 10);
             this.creerexamen.Name = "creerexamen";
             this.creerexamen.Size = new System.Drawing.Size(158, 61);
             this.creerexamen.TabIndex = 28;
             this.creerexamen.Text = "Créer Examen";
-            this.creerexamen.UseVisualStyleBackColor = true;
+            this.creerexamen.UseVisualStyleBackColor = false;
             this.creerexamen.Click += new System.EventHandler(this.creerexamen_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(630, 90);
+            this.button1.BackColor = System.Drawing.Color.Fuchsia;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(682, 216);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 37);
+            this.button1.Size = new System.Drawing.Size(79, 52);
             this.button1.TabIndex = 29;
-            this.button1.Text = "Ajouter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Envoyer";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // qc
             // 
-            this.button2.Location = new System.Drawing.Point(630, 156);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 39);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Ajouter";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.qc.AutoSize = true;
+            this.qc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qc.Location = new System.Drawing.Point(316, 25);
+            this.qc.Name = "qc";
+            this.qc.Size = new System.Drawing.Size(63, 24);
+            this.qc.TabIndex = 32;
+            this.qc.TabStop = true;
+            this.qc.Text = "QCM";
+            this.qc.UseVisualStyleBackColor = true;
+            this.qc.Visible = false;
+            this.qc.CheckedChanged += new System.EventHandler(this.qc_CheckedChanged);
             // 
-            // button3
+            // qsdirecte
             // 
-            this.button3.Location = new System.Drawing.Point(630, 225);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(66, 39);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Ajouter";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.qsdirecte.AutoSize = true;
+            this.qsdirecte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qsdirecte.Location = new System.Drawing.Point(450, 25);
+            this.qsdirecte.Name = "qsdirecte";
+            this.qsdirecte.Size = new System.Drawing.Size(146, 24);
+            this.qsdirecte.TabIndex = 33;
+            this.qsdirecte.TabStop = true;
+            this.qsdirecte.Text = "Question Directe";
+            this.qsdirecte.UseVisualStyleBackColor = true;
+            this.qsdirecte.Visible = false;
+            this.qsdirecte.CheckedChanged += new System.EventHandler(this.qsdirecte_CheckedChanged);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Orange;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(682, 376);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(79, 50);
+            this.button4.TabIndex = 37;
+            this.button4.Text = "Envoyer";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(408, 285);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(65, 20);
+            this.radioButton1.TabIndex = 39;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Choix1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(511, 285);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(65, 20);
+            this.radioButton2.TabIndex = 40;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Choix2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(611, 285);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(65, 20);
+            this.radioButton3.TabIndex = 41;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Choix3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.Visible = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(408, 334);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(65, 20);
+            this.radioButton4.TabIndex = 42;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Choix4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.Visible = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(511, 334);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(65, 20);
+            this.radioButton5.TabIndex = 43;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Choix5";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.Visible = false;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(612, 334);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(65, 20);
+            this.radioButton6.TabIndex = 44;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Choix6";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.Visible = false;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton7.Location = new System.Drawing.Point(408, 389);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(65, 20);
+            this.radioButton7.TabIndex = 45;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Choix7";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.Visible = false;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton8.Location = new System.Drawing.Point(511, 388);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(65, 20);
+            this.radioButton8.TabIndex = 46;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Choix8";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.Visible = false;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton9.Location = new System.Drawing.Point(612, 388);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(65, 20);
+            this.radioButton9.TabIndex = 47;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Choix9";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.radioButton9);
+            this.Controls.Add(this.radioButton8);
+            this.Controls.Add(this.radioButton7);
+            this.Controls.Add(this.radioButton6);
+            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.qsdirecte);
+            this.Controls.Add(this.qc);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.creerexamen);
             this.Controls.Add(this.ajouter3qcm);
             this.Controls.Add(this.ajouter2qcm);
             this.Controls.Add(this.ajouter1qcm);
-            this.Controls.Add(this.annuler);
-            this.Controls.Add(this.envoyer);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.checkBox11);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.textbox6);
+            this.Controls.Add(this.textbox5);
+            this.Controls.Add(this.textbox4);
             this.Controls.Add(this.ajouter1);
             this.Controls.Add(this.ajouter2);
             this.Controls.Add(this.ajouter3);
             this.Controls.Add(this.textbox1);
             this.Controls.Add(this.textbox2);
             this.Controls.Add(this.textbox3);
-            this.Controls.Add(this.questiondirect);
-            this.Controls.Add(this.qcm);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -405,35 +400,32 @@
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox qcm;
-        private System.Windows.Forms.CheckBox questiondirect;
         private System.Windows.Forms.TextBox textbox3;
         private System.Windows.Forms.TextBox textbox2;
         private System.Windows.Forms.TextBox textbox1;
         private System.Windows.Forms.Button ajouter3;
         private System.Windows.Forms.Button ajouter2;
         private System.Windows.Forms.Button ajouter1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button envoyer;
-        private System.Windows.Forms.Button annuler;
+        private System.Windows.Forms.TextBox textbox4;
+        private System.Windows.Forms.TextBox textbox5;
+        private System.Windows.Forms.TextBox textbox6;
         private System.Windows.Forms.Button ajouter1qcm;
         private System.Windows.Forms.Button ajouter2qcm;
         private System.Windows.Forms.Button ajouter3qcm;
         private System.Windows.Forms.Button creerexamen;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RadioButton qc;
+        private System.Windows.Forms.RadioButton qsdirecte;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton9;
     }
 }
 
