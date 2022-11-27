@@ -2,7 +2,8 @@
 
 public class QCM()
 {
-		public bool Vrai;
-	    public bool False;
+
+        public bool Vrai;
+public bool False;
 }
 

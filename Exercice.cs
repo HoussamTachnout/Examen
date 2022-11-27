@@ -2,6 +2,7 @@
 
 public class Exercice()
 {
-		public string texte;
+
+        public string texte;
 }
 

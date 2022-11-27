@@ -3,7 +3,8 @@
 
 public class Reponse()
 {
-		public bool boolean;
-	    public string texte;
+
+        public bool boolean;
+public string texte;
 }
 
