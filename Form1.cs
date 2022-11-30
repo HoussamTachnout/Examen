@@ -20,6 +20,7 @@ namespace Exam
         {
             InitializeComponent();
         }
+        string Gender;
         private void ajouter1_Click(object sender, EventArgs e)
         {
             textbox1.Visible = true;
@@ -65,6 +66,15 @@ namespace Exam
         {
             qsdirecte.Visible = true;
             qc.Visible = true;
+            type.Visible = true;
+            matière.Visible = true;
+            durée.Visible = true;
+            date.Visible = true;
+            textbox7.Visible = true;
+            textbox8.Visible = true;
+            dateTimePicker1.Visible = true;
+            enregistre.Visible = true;
+            annule.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -101,6 +111,7 @@ namespace Exam
             textbox1.Visible = false;
             textbox2.Visible = false;
             textbox3.Visible = false;
+            Gender = "QCM";
         }
 
         private void qsdirecte_CheckedChanged(object sender, EventArgs e)
@@ -128,6 +139,7 @@ namespace Exam
             radioButton8.Visible = false;
             radioButton9.Visible = false;
             button4.Visible = false;
+            Gender = "Question Directe";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -150,6 +162,43 @@ namespace Exam
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void enregistre_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string connString = "Server=localhost;Database=table;Uid=root;Pwd=;";
+                MySqlConnection mcon = new MySqlConnection(connString);
+                mcon.Open();
+
+                string cmdText = "INSERT INTO exam(type,matière,durée,date) VALUES (@Gender,@textbox7,@textbox8,@dateTimePicker1)";
+                MySqlCommand cmd = new MySqlCommand(cmdText, mcon);
+                cmd.Parameters.Add("@textbox7", textbox7.Text);
+                cmd.Parameters.Add("@textbox8", textbox8.Text);
+                cmd.Parameters.Add("@dateTimePicker1", dateTimePicker1.Text);
+                cmd.Parameters.Add("Gender", Gender);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Examen Inserted");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            matière.Visible = false;
+            durée.Visible = false;
+            date.Visible = false;
+            textbox7.Visible = false;
+            textbox8.Visible = false;
+            dateTimePicker1.Visible = false;
+            enregistre.Visible = false;
+            annule.Visible = false;
+        }
+
+        private void annule_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cancel");
+            this.Close();
         }
     }
 }
