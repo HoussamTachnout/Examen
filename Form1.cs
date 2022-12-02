@@ -20,7 +20,7 @@ namespace Exam
         {
             InitializeComponent();
         }
-        string Gender;
+        string Type;
         private void ajouter1_Click(object sender, EventArgs e)
         {
             textbox1.Visible = true;
@@ -111,7 +111,7 @@ namespace Exam
             textbox1.Visible = false;
             textbox2.Visible = false;
             textbox3.Visible = false;
-            Gender = "QCM";
+            Type = "QCM";
         }
 
         private void qsdirecte_CheckedChanged(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace Exam
             radioButton8.Visible = false;
             radioButton9.Visible = false;
             button4.Visible = false;
-            Gender = "Question Directe";
+            Type = "Question Directe";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -177,7 +177,7 @@ namespace Exam
                 cmd.Parameters.Add("@textbox7", textbox7.Text);
                 cmd.Parameters.Add("@textbox8", textbox8.Text);
                 cmd.Parameters.Add("@dateTimePicker1", dateTimePicker1.Text);
-                cmd.Parameters.Add("Gender", Gender);
+                cmd.Parameters.Add("Type", Type);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Examen Inserted");
             }
